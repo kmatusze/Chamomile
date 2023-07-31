@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chamomile</title>
+    <style>
+      body {
+        background: rgb(245, 214, 114);
+        background: radial-gradient(circle at 5% 4.8%, rgb(239, 227, 157) 8%, rgb(249, 200, 85) 86.6%);
+        color: rgb(2, 45, 1);
+        width: 100%;
+        margin: 60px auto;
+        font-family: "Cerebri Sans", Helvetica, Helvetica, sans-serif;
+      }
+
+      h1 {
+        text-align: center;
+        color: darkgreen;
+        font-size: 60px;
+        font-style: oblique 60deg;
+      }
+
+      h2 {
+        color: darkgreen;
+        text-align: center;
+        border: 1px solid darkgreen;
+        padding: 15px;
+        font-size: 25px;
+        border-radius: 20px;
+        background-color: rgb(249, 200, 85);
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        padding: 5px;
+        max-width: 800px;
+        border-radius: 25px;
+      }
+
+      p {
+        line-height: 1.5;
+        font-size: 16px;
+        margin: 10px 0 10px;
+      }
+
+      button {
+        display: block;
+        margin: 18px auto;
+        background-color: darkgreen;
+        color: lightgoldenrodyellow;
+        font-size: 18px;
+        padding: 15px 18px;
+        border: none;
+        border-radius: 25px;
+        box-shadow: 5px 5px 10px rgb(1, 48, 0);
+        transition: all 200ms ease-in-out;
+      }
+
+      button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+      }
+
+      .container {
+        max-width: 900px;
+        padding: 30px 60px;
+      }
+
+      .learn-more {
+        display: block;
+        margin-top: 10px;
+        text-decoration: none;
+        color: darkgreen;
+        font-size: 16px;
+      }
+
+      .learn-more:hover {
+        text-decoration: underline;
+      }
+
+      .footer {
+        text-align: center;
+        color: darkgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Chamomile</h1>
+      <h2>MORE THAN A COMMON HERB</h2>
+      <img
+        src="https://images.hollandandbarrettimages.co.uk/the-health-hub/2020/12/shutterstock_1420671815-768x295.jpg?imdensity=1&impolicy=attract&imwidth=600"
+        alt="Chamomile"
+        width="500"
+      />
+      <p>
+        Anyone who gardens knows from the start knows that healthy soil is the
+        secret to good gardening! <strong>(Chamaemelum Nobilis)</strong> is one
+        of those plants that always turns up in conversation when soil
+        maintenance enters the discussion. For those who follow the biodynamic
+        principles of Rudolf Steiner, Chamomile is considered a critical
+        ingredient in biodynamic compost. And yet, while it is considered a
+        common herb, Chamomile is not as common as would hope. It's popular name
+        "Common Chamomile" hardly fits the description. Not only is it not
+        common, but there are also multitudes of varieties and sub-varieties
+        that cannot or should not serve as substitutes for the real thing. Among
+        those lookalikes is Stinking Chamomile, also knowns as Dog Fennel, well
+        named since it smells like an old, wet dog. Because of its decorative
+        and soil-enriching value, true Chamomile is often planted as a cover
+        crop, again in view of its percieved remedial qualities according to
+        biodynamic farming. 
+        
+        <p><strong>What about its culinary uses?</strong> Happily, there are
+        many. One of the common folk names for Chamomile is "Little Apple", due
+        to the sweet apple-like scent that distinguishes true Chamomile from all
+        other lookalikes. The affinity to apples is the key to its culinary
+        uses, since tea can be added to apple pies or apples can be infused in
+        it to heighten their flavor. Even the whole flowers can be added to
+        apple pies and tarts for an unusual culinary experience. For this
+        reason, Chamomile can be used to flavor custards and delicate puddings
+        and even cheesecake.</p> 
+        <br />    
+      </p>
+      <a
+        href="https://www.rareseeds.com/store/whole-seed-catalog"
+        target="_blank"
+        class="learn-more"
+      >
+        <strong>Learn more at The Whole Seed Catalog 2023</strong>
+      </a>
+
+      <button class="buy-button">
+        Buy The Whole Seed Catalog 2023
+    </button>
+    
+      <p class="footer">This page was built by Kara Matuszewski</p>
+    </div>
+
+    <script>
+        alert("Hello Chamomile Lovers!")
+        function buy(){
+            let name = prompt("What is your name?")
+            let email = prompt("What is your email address?");
+            let chamomile = prompt ("What is your favorite Chamomile?");
+            if(chamomile ==="German Chamomile") {
+                alert("One of my favorite's to!");
+            } else {
+                alert("Try German Chamomile, I highly recommend it!")
+            }
+
+            alert("Thank you " + name + "! We'll be in touch by email, meanwhile enjoy Chamomile!");
+        }
+        let buybutton = document.querySelector(".buy-button");
+        buybutton.addEventListener("click", buy);
+    </script>
+  </body>
+</html>
